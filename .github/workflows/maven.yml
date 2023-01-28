@@ -13,11 +13,7 @@ jobs:
         with:
           java-version: '17'
           distribution: 'temurin'
-      - name: Remove Chrome
-        run: sudo apt purge google-chrome-stable
-      - name: Remove default Chromium
-        run: sudo apt purge chromium-browser
-      - name: Install a new Chromium
-        run: sudo apt install -y chromium-browser
+      - name: Install Chrome and Chromedriver
+        run: ./scripts/install-chrome.sh
       - name: Test
         run: mvn test
