@@ -1,4 +1,4 @@
-package com.github.canary;
+package com.github.jasmaa.testngcanaryexample;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;

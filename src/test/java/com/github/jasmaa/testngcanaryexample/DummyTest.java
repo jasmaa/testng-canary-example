@@ -1,4 +1,4 @@
-package com.github.canary;
+package com.github.jasmaa.testngcanaryexample;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;

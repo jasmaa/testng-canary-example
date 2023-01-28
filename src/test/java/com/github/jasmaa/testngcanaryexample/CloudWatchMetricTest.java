@@ -1,4 +1,4 @@
-package com.github.canary;
+package com.github.jasmaa.testngcanaryexample;
 
 import java.time.Instant;
 import java.time.temporal.ChronoUnit;

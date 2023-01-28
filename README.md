@@ -1,4 +1,4 @@
-# TestNG Canary Test
+# TestNG Canary Example
 
 TestNG canary example with CloudWatch metrics.
 
