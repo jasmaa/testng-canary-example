@@ -1,6 +1,11 @@
 name: Java CI
 
-on: [push]
+on:
+  schedule:
+    - cron: '0 * * * *'
+  push:
+    branches:
+      - main
 
 permissions:
   id-token: write # This is required for requesting the JWT
@@ -23,7 +28,5 @@ jobs:
         with:
           role-to-assume: ${{ secrets.AWS_ROLE_TO_ASSUME }}
           aws-region: ${{ secrets.AWS_REGION }}
-      - name: Compile
-        run: mvn compile
       - name: Test
         run: mvn test
