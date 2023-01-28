@@ -13,7 +13,5 @@ jobs:
         with:
           java-version: '17'
           distribution: 'temurin'
-      - name: Install Chrome and Chromedriver
-        run: ./scripts/install-chrome.sh
       - name: Test
         run: mvn test
