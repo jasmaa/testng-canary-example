@@ -23,6 +23,11 @@
       <version>7.6.1</version>
       <scope>test</scope>
     </dependency>
+    <dependency>
+      <groupId>org.seleniumhq.selenium</groupId>
+      <artifactId>selenium-java</artifactId>
+      <version>4.8.0</version>
+    </dependency>
   </dependencies>
 
   <build>
@@ -45,6 +50,14 @@
         <plugin>
           <artifactId>maven-surefire-plugin</artifactId>
           <version>2.22.1</version>
+          <configuration>
+            <properties>
+              <property>
+                <name>surefire.testng.verbose</name>
+                <value>10</value>
+              </property>
+            </properties>
+          </configuration>
         </plugin>
         <plugin>
           <artifactId>maven-jar-plugin</artifactId>
