@@ -4,8 +4,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
-import software.amazon.awssdk.services.cloudwatch.CloudWatchClient;
-
 public class Utils {
   public static WebDriver getDriver() {
     ChromeOptions options = new ChromeOptions();
@@ -14,9 +12,5 @@ public class Utils {
 
     WebDriver driver = new ChromeDriver(options);
     return driver;
-  }
-
-  public static CloudWatchClient getCloudWatchClient() {
-    return CloudWatchClient.create();
   }
 }
