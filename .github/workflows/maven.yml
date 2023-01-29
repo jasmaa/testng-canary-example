@@ -12,7 +12,7 @@ permissions:
   contents: read  # This is required for actions/checkout
 
 jobs:
-  build:
+  canary:
     runs-on: ubuntu-latest
 
     steps:
@@ -30,3 +30,5 @@ jobs:
           aws-region: ${{ secrets.AWS_REGION }}
       - name: Test
         run: mvn test
+      - name: Publish results to CloudWatch
+        uses: jasmaa/testng-cloudwatch-metrics-action@main
