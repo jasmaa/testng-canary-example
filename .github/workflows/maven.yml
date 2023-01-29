@@ -28,7 +28,8 @@ jobs:
         with:
           role-to-assume: ${{ secrets.AWS_ROLE_TO_ASSUME }}
           aws-region: ${{ secrets.AWS_REGION }}
-      - name: Test
+      - name: Run test suites
         run: mvn test
       - name: Publish results to CloudWatch
+        if: always()
         uses: jasmaa/testng-cloudwatch-metrics-action@main

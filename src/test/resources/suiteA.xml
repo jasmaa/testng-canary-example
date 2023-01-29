@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="SuiteA">
+  <test name="TestA1" allow-return-values="true">
+    <classes>
+      <class name="com.github.jasmaa.testngcanaryexample.DummyTest" />
+    </classes>
+  </test>
+  <test name="TestA2" allow-return-values="true">
+    <classes>
+      <class name="com.github.jasmaa.testngcanaryexample.ExampleTest" />
+    </classes>
+  </test>
+</suite>
