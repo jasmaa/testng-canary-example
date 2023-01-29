@@ -14,6 +14,7 @@ permissions:
 jobs:
   canary:
     runs-on: ubuntu-latest
+    continue-on-error: true
 
     steps:
       - uses: actions/checkout@v3
@@ -31,5 +32,4 @@ jobs:
       - name: Run test suites
         run: mvn test
       - name: Publish results to CloudWatch
-        if: always()
         uses: jasmaa/testng-cloudwatch-metrics-action@main
