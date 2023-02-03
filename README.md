@@ -2,6 +2,7 @@
 
 TestNG canary example with CloudWatch metrics.
 
+![CloudWatch metrics screenshot](docs/screenshot.png)
 
 ## Getting started
 

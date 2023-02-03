@@ -33,4 +33,4 @@ jobs:
         run: mvn test
       - name: Publish results to CloudWatch
         if: always()
-        uses: jasmaa/testng-cloudwatch-metrics-action@main
+        uses: jasmaa/testng-cloudwatch-metrics-action@v1.0.0
