@@ -1,8 +1,9 @@
 name: Java CI
 
 on:
-  schedule:
-    - cron: '0 * * * *'
+# Disable temporarily
+#  schedule:
+#    - cron: '0 * * * *'
   push:
     branches:
       - main
